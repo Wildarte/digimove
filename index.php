@@ -333,156 +333,236 @@
             </div>
         </section>
 
-        <section>
-            <article>
-                <header>
-                    <img src="" alt="">
-                    <h2>Apartamentos</h2>
-                </header>
-                <div>
-                    <p>Apartamentos novos e selecionados para você nos melhores bairros</p>
-                    <a href="#">Saiba Mais</a>
-                </div>
-            </article>
+        <section class="container-full section_links_cat">
+            <div class="container section_links_cat_content">
+                <article class="card_links_cat">
+                    <header class="card_header_link">
+                        <div class="card_img_link">
+                            <img src="img/cat1.jpg" alt="">
+                        </div>
+                        <h2>Apartamentos</h2>
+                    </header>
+                    <div class="card_body_link">
+                        <p>Apartamentos novos e selecionados para você nos melhores bairros</p>
+                        <a class="card_saiba_mais_link" href="#">Saiba Mais</a>
+                    </div>
+                </article>
 
-            <article>
-                <header>
-                    <img src="" alt="">
-                    <h2>Casas</h2>
-                </header>
-                <div>
-                    <p>Casa de qualidade com ótimas localizações e prontas para você morar</p>
-                    <a href="#">Saiba Mais</a>
-                </div>
-            </article>
+                <article class="card_links_cat">
+                    <header class="card_header_link">
+                        <div class="card_img_link">
+                            <img src="img/cat2.jpg" alt="">
+                        </div>
+                        <h2>Casas</h2>
+                    </header>
+                    <div class="card_body_link">
+                        <p>Casa de qualidade com ótimas localizações e prontas para você morar</p>
+                        <a  class="card_saiba_mais_link" href="#">Saiba Mais</a>
+                    </div>
+                </article>
 
-            <article>
-                <header>
-                    <img src="" alt="">
-                    <h2>Lançamentos</h2>
-                </header>
-                <div>
-                    <p>Imóveis de alto padrão prestes a serem lançados, conheça agora</p>
-                    <a href="#">Saiba Mais</a>
-                </div>
-            </article>
+                <article class="card_links_cat">
+                    <header class="card_header_link">
+                        <div class="card_img_link">
+                            <img src="img/cat3.jpg" alt="">
+                        </div>
+                        <h2>Lançamentos</h2>
+                    </header>
+                    <div class="card_body_link">
+                        <p>Imóveis de alto padrão prestes a serem lançados, conheça agora</p>
+                        <a  class="card_saiba_mais_link" href="#">Saiba Mais</a>
+                    </div>
+                </article>
+            </div>
+            
         </section>
 
-        <section>
-            <header>
-                <h2>Nossos Serviços</h2>
-            </header>
-
-            <section>
-                <article>
-                    <header>
-                        <img src="" alt="">
-                        <h3>Anuncie seu imóvel</h3>
+        <section class="container-full section_home_servicos">
+            <div class="section_home_servicos_over">
+                <div class="container section_home_servicos_content">
+                    <header class="section_home_servicos_header">
+                        <h2>Nossos Serviços</h2>
                     </header>
-                    <div>
-                        <p>Anúnciamos seu imóvel cuidamos de toda a parte de atendimento com os clientes e encontraremos a pessoa certa para seu imóvel</p>
-                        <a href="#">Saiba Mais</a>
-                    </div>
-                </article>
 
-                <article>
-                    <header>
-                        <img src="" alt="">
-                        <h3>REGULARIZE SEU IMÓVEL</h3>
-                    </header>
-                    <div>
-                        <p>Cuidaremos de toda a parte burocrática da regualiração do seu imóvel, nosso especialista está pronto para atender você</p>
-                        <a href="#">Saiba Mais</a>
-                    </div>
-                </article>
+                    <section class="section_home_servicos_body">
 
-                <article>
-                    <header>
-                        <img src="" alt="">
-                        <h3>AVALIAÇÃO JUDICIAL</h3>
-                    </header>
-                    <div>
-                        <p>Iremos avaliar o valor do seu imóvel, nosso especialista está preparado para atender a sua demanda</p>
-                        <a href="#">Saiba Mais</a>
-                    </div>
-                </article>
-            </section>
-        </section>
+                        <article class="card_servicos">
+                            <header class="card_servicos_header">
+                                <img src="img/servico1.jpg" alt="serviço de anúncio de imóvel">
+                                <h3>ANUNCIE SEU IMÓVEL</h3>
+                            </header>
+                            <div class="card_servicos_body">
+                                <p>Anúnciamos seu imóvel cuidamos de toda a parte de atendimento com os clientes e encontraremos a pessoa certa para seu imóvel</p>
+                                <a class="card_saiba_mais_servico" href="#">Saiba Mais</a>
+                            </div>
+                        </article>
 
-        <section>
-            <header>
-                <h2>Depoimentos</h2>
-            </header>
-            <div>
+                        <article class="card_servicos">
+                            <header class="card_servicos_header">
+                                <img src="img/servico2.jpg" alt="regularize seu imóvel">
+                                <h3>REGULARIZE SEU IMÓVEL</h3>
+                            </header>
+                            <div class="card_servicos_body">
+                                <p>Cuidaremos de toda a parte burocrática da regualiração do seu imóvel, nosso especialista está pronto para atender você</p>
+                                <a class="card_saiba_mais_servico" href="#">Saiba Mais</a>
+                            </div>
+                        </article>
 
+                        <article class="card_servicos">
+                            <header class="card_servicos_header">
+                                <img src="img/servico3.jpg" alt="avaliação judicial">
+                                <h3>AVALIAÇÃO JUDICIAL</h3>
+                            </header>
+                            <div class="card_servicos_body">
+                                <p>Iremos avaliar o valor do seu imóvel, nosso especialista está preparado para atender a sua demanda</p>
+                                <a class="card_saiba_mais_servico" href="#">Saiba Mais</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <header>
-                    <h2>Solicite um orçamento através do formulário ou fale mais sobre sua demanda</h2>
+        <section class="container section_reviews">
+            <div class="section_reviews_content">
+                <header class="header_reviews">
+                    <h2>Depoimentos</h2>
                 </header>
-                <form action="">
-                    <input type="text" name="nome" id="" placeholder="Nome">
-                    <input type="email" name="email" id="" placeholder="Email">
-                    <input type="text" name="telefone" id="" placeholder="Telefone">
-                    <input type="text" name="servico-produto" id="" placeholder="Serviço ou produto">
-                    <textarea name="msg" id="" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
-                </form>
+                <!-- Slideshow container rivews-->
+                <div class="slideshow-container-reviews">
+
+                    <!-- Full-width slides/quotes -->
+                    <div class="mySlides-reviews">
+                        <div class="mySlides-reviews-thumb">
+                            <img src="img/user-review.jpg" alt="imagem review do cliente">
+                        </div>
+                        <div class="mySlides-reviews-content">
+                            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                            <p class="author-reviews">- John Keats</p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides-reviews">
+                        <div class="mySlides-reviews-thumb">
+                            <img src="img/user-review.jpg" alt="imagem review do cliente">
+                        </div>
+                        <div class="mySlides-reviews-content">
+                            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                            <p class="author-reviews">- Ernest Hemingway</p>
+                        </div>                    
+                    </div>
+
+                    <div class="mySlides-reviews">
+                        <div class="mySlides-reviews-thumb">
+                            <img src="img/user-review.jpg" alt="imagem review do cliente">
+                        </div>
+                        <div class="mySlides-reviews-content">
+                            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                            <p class="author-reviews">- Thomas A. Edison</p>
+                        </div>
+                    </div>
+
+                    <!-- Next/prev buttons -->
+                    <a class="prev-reviews" onclick="plusSlidesReviews(-1)">&#10094;</a>
+                    <a class="next-reviews" onclick="plusSlidesReviews(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="dot-container-reviews">
+                    <span class="dot-reviews" onclick="currentSlideReviews(1)"></span>
+                    <span class="dot-reviews" onclick="currentSlideReviews(2)"></span>
+                    <span class="dot-reviews" onclick="currentSlideReviews(3)"></span>
+                </div>
             </div>
         </section>
+            
+
+        <section class="container-full section_form">
+            <div class="container section_form_content">
+                <div class="form_content">
+                    <div class="form_content_over">
+                        <header class="section_form_header">
+                            <h2>Solicite um orçamento através do formulário ou fale mais sobre sua demanda</h2>
+                        </header>
+                        <form action="">
+                            <input type="text" name="nome" id="" placeholder="Nome" required>
+                            <input type="email" name="email" id="" placeholder="Email" required>
+                            <input type="text" name="telefone" id="" placeholder="Telefone" required>
+                            <input type="text" name="servico-produto" id="" placeholder="Serviço ou produto" required>
+                            <textarea name="msg" id="" cols="30" rows="10" placeholder="Sua mensagem..."></textarea required>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <section>
-        mapa
+    <section class="container-full section_maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4886195944687!2d-46.684340585629656!3d-23.586803084670215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5744e0ebff5b%3A0x769bf4a32f914782!2sGoogle%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1633474260595!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
-    <section>
-        <header>
-            <img src="" alt="">
-        </header>
-        <div>
-        <div>
-            <p>Nossa missão é lhe entregar um serviço que atenda suas espectativas, priorizamos o bom relacionamento com o cliente e acreditamos na qualidade do serviço prestado</p>
-        </div>
-            <div>
-                <header>
-                    <h3>últimas novidades</h3>
+    <section class="container-full section_footer">
+        <div class="section_footer_over">
+            <div class="container section_footer_content">
+                <header class="header_footer">
+                    <div class="logo_header_footer">
+                        <img src="img/logo - Digi Move.png" alt="">
+                    </div>
                 </header>
-                <section>
-                    <article>
-                        <div>
 
+                <div class="body_footer">
+                    <div class="desc_body_footer">
+                        <header class="desc_body_footer_header">
+                            <h3>
+                                Digi Movi
+                            </h3>
+                        </header>
+                        <p>Nossa missão é lhe entregar um serviço que atenda suas espectativas, priorizamos o bom relacionamento com o cliente e acreditamos na qualidade do serviço prestado</p>
+                        <div class="contatos_footer">
+                            <ul>
+                                <li><a href="tel:99192929192192">(12) 9 9999-9999</a></li>
+                                <li><a href="mailto:contato@meusite.com">contato@meusite.com</a></li>
+                            </ul>
                         </div>
-                        <div>
-                            <h4>Alameda das flores</h4>
-                            <p>Venda: R$ 290.000  |  Aluga: R$ 1.200/mês</p>
-                        </div>
-                    </article>
+                    </div>
+                    <div class="divider_footer"></div>
+                    <div class="news_footer">
+                        <header class="header_news_footer">
+                            <h3>últimas novidades</h3>
+                        </header>
+                        <section class="body_news_footer">
+                            <article class="card_footer">
+                                <a href="#" class="card_thumb" style="background-image: url('img/lancamento1.jpg');"></a>
+                                <div class="body_card_footer">
+                                    <h4>Alameda das flores</h4>
+                                    <p>Venda: R$ 290.000  |  Aluga: R$ 1.200/mês</p>
+                                </div>
+                            </article>
 
-                    <article>
-                        <div>
-
-                        </div>
-                        <div>
-                            <h4>Alameda das flores</h4>
-                            <p>Venda: R$ 290.000  |  Aluga: R$ 1.200/mês</p>
-                        </div>
-                    </article>
-                </section>
+                            <article class="card_footer">
+                                <a href="#" class="card_thumb" style="background-image: url('img/lancamento2.jpg');">
+                                </a>
+                                <div class="body_card_footer">
+                                    <h4>Alameda das flores</h4>
+                                    <p>Venda: R$ 290.000  |  Aluga: R$ 1.200/mês</p>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                
+                <div class="social_footer">
+                    <div>
+                        <a href="#"><i class="bi bi-facebook"></i>facebook</a>
+                        <a href="#"><i class="bi bi-instagram"></i>instagram</a>
+                        <a href="#"><i class="bi bi-twitter"></i>twitter</a>
+                        <a href="#"><i class="bi bi-linkedin"></i>linkedin</a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div>
-            <div>
-                <a href="#"><i class="bi bi-facebook"></i>facebook</a>
-                <a href="#"><i class="bi bi-instagram"></i>instagram</a>
-                <a href="#"><i class="bi bi-twitter"></i>twitter</a>
-                <a href="#"><i class="bi bi-linkedin"></i>linkedin</a>
-            </div>
-        </div>
-        
+        </div> 
     </section>
 
     <footer>
@@ -493,6 +573,7 @@
     
     <script src="js/sliderCard.js"></script>
     <script src="js/slideLancamento.js"></script>
+    <script src="js/review.js"></script>
 
 </body>
 </html>
