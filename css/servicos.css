@@ -1,0 +1,12 @@
+.header_servicos{
+    width: 100%;
+    padding: 60px 10px;
+    text-align: center;
+}
+.section_servicos_page{
+    width: 100%;
+}
+.header_servicos h2{
+    font-size: 2.2em;
+    font-weight: 400;
+}
