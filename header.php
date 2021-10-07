@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/imoveis.css">
     <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/imovel.css">
     <link rel="stylesheet" href="./css/font/bootstrap-icons.css">
-    <style>
-        i{
-            font-size: 1.5em;
-        }
-    </style>
+    <style>i{font-size: 1.5em;}</style>
 </head>
 <body>
     

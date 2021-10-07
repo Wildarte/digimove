@@ -49,7 +49,6 @@
     width: 100%;
     max-width: 300px;
     margin: auto;
-    box-shadow: 1px 1px 10px #121212;
 }
 .section_intro_pages_header h1{
     display: flex;
@@ -254,7 +253,7 @@ header.header{
     background-color: #eee;
     flex-basis: calc(33% - 10px);
     margin: 10px 5px;
-    border: 1px solid;
+    box-shadow: 2px 2px 4px 2px #343434;
 }
 .header_card_imovel{
     height: 220px;
@@ -762,7 +761,7 @@ a.card_saiba_mais_servico{
 
 /* section form */
 .section_form{
-    margin: 40px 0 0;
+    margin: 0;
     padding: 40px 10px;
     background-image: url('../img/form_img.jpg');
     background-position: center;

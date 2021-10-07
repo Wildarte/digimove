@@ -453,5 +453,5 @@
     <?php include('./inc/formContact.php') ?>
 
 </main>
-
+<?php include('./inc/maps.php'); ?>
 <?php include('./footer.php'); ?>

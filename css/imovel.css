@@ -1,0 +1,117 @@
+.section_imovel{
+    padding: 40px 0px;
+}
+.social_share_imovel{
+    padding: 10px;
+}
+.imovel_content_principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.imovel_content_principal_midia{
+    flex-basis: calc(70% - 20px);
+    margin: 10px;
+    border: 1px solid;
+    overflow: hidden;
+}
+.imovel_content_principal{
+    border: 1px solid;
+    padding: 0;
+}
+
+/* gallery photos imoveis */
+.container_gallery_photos{
+    background-color: #343434;
+    width: 100%;
+    height: 440px;
+}
+.slide_gallery_photos{
+    position: relative;
+    display: none;
+    overflow: hidden;
+    border: 1px solid;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+}
+p.gallery_legend{
+    background-color: #232323;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+.gallery_photos_palco{
+    height: 80%;
+    position: relative;
+}
+.slide_gallery_photos img{
+    height: 100%;
+}
+
+.gallery_imovel_thumb{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.gallery_imovel_thumb .photo_thumb{
+    background-color: #fff;
+    width: 16%;
+    height: 100%;
+}
+.gallery_imovel_thumb .photo_thumb:hover{
+    cursor: pointer;
+}
+.gallery_imovel_thumb .photo_thumb img{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.gallery_imovel_thumb_active{
+    opacity: 1!important;
+}
+
+
+.prev_gallery,
+.next_gallery {
+  background-color: #111;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next_gallery {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+.imovel_content_principal_info{
+    flex-basis: calc(30% - 20px);
+    border: 1px solid;
+    min-height: 440px;
+    margin: 10px;
+}
+
+
+/* max screen width 768px */
+@media(max-width: 768px){
+    .container_gallery_photos{
+        height: 300px;
+        margin: 0;
+    }
+    .imovel_content_principal_midia, .imovel_content_principal_info{
+        flex-basis: calc(100% - 10px);
+    }
+}
+/* end max screen width 768px */

@@ -51,5 +51,5 @@
         </section>
     </section>
 </main>
-
+<?php include('./inc/maps.php'); ?>
 <?php include('./footer.php'); ?>
