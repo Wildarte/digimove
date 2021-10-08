@@ -1,11 +1,4 @@
-var size_frame_photo = document.querySelector(".slide_gallery_photos");
-
-/*
-if(size_frame_photo.clientWidth > 800){
-    img.style.width = "100%";
-}
-*/
-
+//controll gallery photos
 var slideGalleryIndex = 1;
 passSlide(slideGalleryIndex);
 
@@ -34,5 +27,92 @@ function passSlide(n){
     }
     slide_photo[slideGalleryIndex - 1].style.display = "block";
     slide_thumb[slideGalleryIndex - 1].style.opacity = 1;
+
+}
+
+
+/*
+//controlls modal
+var indexModalPhotos = 1;
+showPhotoModal(indexModalPhotos);
+
+function passPhotoModal(n){
+    console.log("click")
+    showPhotoModal(indexModalPhotos += n);
+}
+
+function showPhotoModal(n){
+    
+    var slideModalPhoto = document.getElementsByClassName("modal_photo_img");
+    if(n > slideModalPhoto.length){
+        indexModalPhotos = 1;
+    }
+    if(n < 1){
+        indexModalPhotos = slideModalPhoto.length;
+    }
+    for(var i = 0; i < slideModalPhoto.length; i++){
+        slideModalPhoto[i].style.display = "none";
+    }
+    slideModalPhoto[indexModalPhotos - 1].style.display = "block";
+
+}
+*/
+//button close modal gallery photos
+
+document.querySelector(".btn_close_modal_photos").addEventListener("click", function(){
+    //document.querySelector(".modal_photos_gallery").classList.remove("open_modal_gallery");
+
+    document.querySelector(".modal_photos_gallery").classList.remove("open_modal_gallery");
+    document.querySelector(".gallery_photos_palco").classList.remove("modal_photos_gallery");
+
+    document.querySelector(".prev_gallery").classList.remove("prev_gallery_modal");
+    document.querySelector(".next_gallery").classList.remove("next_gallery_modal");
+
+    document.querySelector(".modal_full_screen").style.display = "block";
+    document.querySelector(".btn_close_modal_photos").style.display = "none";
+})
+
+document.querySelector(".modal_full_screen").addEventListener("click", function(){
+    //document.querySelector(".modal_photos_gallery").classList.add("open_modal_gallery");
+    document.querySelector(".gallery_photos_palco").classList.add("modal_photos_gallery");
+    document.querySelector(".modal_photos_gallery").classList.add("open_modal_gallery");
+    document.querySelector(".prev_gallery").classList.add("prev_gallery_modal");
+    document.querySelector(".next_gallery").classList.add("next_gallery_modal");
+
+    document.querySelector(".modal_full_screen").style.display = "none";
+    document.querySelector(".btn_close_modal_photos").style.display = "unset";
+});
+
+
+// buttons control media imovel
+
+function controlToggles(n){
+    var btnsMdeia = document.getElementsByClassName("controlMedia");
+
+    switch(n){
+        case 2:
+            document.querySelector(".container_gallery_photos").style.display = "none";
+            document.querySelector(".container_video_imovel").style.display = "flex";
+            document.querySelector(".container_imovel_3d").style.display = "none";
+            btnsMdeia[1].classList.add("btn_media_selected");
+            btnsMdeia[2].classList.remove("btn_media_selected");
+            btnsMdeia[0].classList.remove("btn_media_selected");
+        break;
+        case 3:
+            document.querySelector(".container_gallery_photos").style.display = "none";
+            document.querySelector(".container_video_imovel").style.display = "none";
+            document.querySelector(".container_imovel_3d").style.display = "flex";
+            btnsMdeia[2].classList.add("btn_media_selected");
+            btnsMdeia[0].classList.remove("btn_media_selected");
+            btnsMdeia[1].classList.remove("btn_media_selected");
+        break;
+        default:
+            document.querySelector(".container_gallery_photos").style.display = "block";
+            document.querySelector(".container_video_imovel").style.display = "none";
+            document.querySelector(".container_imovel_3d").style.display = "none";
+            btnsMdeia[0].classList.add("btn_media_selected");
+            btnsMdeia[1].classList.remove("btn_media_selected");
+            btnsMdeia[2].classList.remove("btn_media_selected");
+    }
 
 }

@@ -31,6 +31,7 @@
                 <div class="imovel_content_principal_midia">
                     
                     <div class="container_gallery_photos">
+
                         <div class="gallery_photos_palco">
                             
                             <div class="slide_gallery_photos">
@@ -86,6 +87,8 @@
                             <a class="prev_gallery" onclick="plusSlidesGallery(-1)">&#10094;</a>
                             <a class="next_gallery" onclick="plusSlidesGallery(1)">&#10095;</a>
 
+                            <div class="modal_full_screen"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <div class="btn_close_modal_photos"><i class="bi bi-x-lg"></i></div>
                         </div>
                         <div class="gallery_imovel_thumb">
                             <div class="photo_thumb">
@@ -114,18 +117,56 @@
                             </div>
                         </div>
 
+                        <!-- 
+                        <div class="modal_photos_gallery">
+                            <div class="btn_close_modal_photos">
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <div class="modal_photo_img">
+                                <img src="img/gallery/image-imovel-4.jpg" alt="">
+                            </div>
+                            <div class="modal_photo_img">
+                                <img src="img/gallery/image-imovel-1.jpg" alt="">
+                            </div>
+                            <div class="modal_photo_img">
+                                <img src="img/gallery/image-imovel-2.jpg" alt="">
+                            </div>
+                            <div class="modal_photo_img">
+                                <img src="img/gallery/image-imovel-7.jpg" alt="">
+                            </div>
+                                
+                            <a class="prev_gallery_modal" onclick="passPhotoModal(-1)">&#10094;</a>
+                            <a class="next_gallery_modal" onclick="passPhotoModal(1)">&#10095;</a>
+                        </div>
+                        -->
                     </div>
 
+                    <div class="container_video_imovel" style="display: none;">
+                        <video width="320" height="240" controls style="width: 100%; height: auto">
+                            <source src="./video/Water - 3967.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="container_imovel_3d" style="display: none;">
+                        container imagem 3D
+                    </div>
+                
                 </div>
 
                 <div class="imovel_content_principal_info">
 
                 </div>
+
             </div>
 
+            <div class="controllers_media_imovel">
+                <button onclick="controlToggles(1)" class="btn_media_imagem controlMedia btn_media_selected">imagem</button>
+                <button onclick="controlToggles(2)" class="btn_media_video controlMedia">vídeo</button>
+                <button onclick="controlToggles(3)" class="btn_media_3d controlMedia">3D</button>
+            </div>
 
             <div class="imovel_content_detalhes">
-
+                
             </div>
             <div class="imovel_content_location">
 

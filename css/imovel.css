@@ -9,16 +9,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    padding: 0;
 }
 .imovel_content_principal_midia{
     flex-basis: calc(70% - 20px);
     margin: 10px;
     border: 1px solid;
     overflow: hidden;
-}
-.imovel_content_principal{
-    border: 1px solid;
-    padding: 0;
 }
 
 /* gallery photos imoveis */
@@ -28,10 +25,8 @@
     height: 440px;
 }
 .slide_gallery_photos{
-    position: relative;
     display: none;
     overflow: hidden;
-    border: 1px solid;
     max-width: 100%;
     height: 100%;
     text-align: center;
@@ -41,6 +36,7 @@ p.gallery_legend{
     color: #fff;
     position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
     padding: 10px;
 }
@@ -56,6 +52,7 @@ p.gallery_legend{
     width: 100%;
     height: 20%;
     display: flex;
+    overflow-x: auto;
 }
 .gallery_imovel_thumb .photo_thumb{
     background-color: #fff;
@@ -65,6 +62,9 @@ p.gallery_legend{
 .gallery_imovel_thumb .photo_thumb:hover{
     cursor: pointer;
 }
+.gallery_imovel_thumb .photo_thumb:hover .gallery_demo_thumb{
+    opacity: 1!important;
+}
 .gallery_imovel_thumb .photo_thumb img{
     width: 100%;
     height: 100%;
@@ -72,6 +72,20 @@ p.gallery_legend{
 }
 .gallery_imovel_thumb_active{
     opacity: 1!important;
+}
+.modal_full_screen{
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+}
+.modal_full_screen:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    background-color: #fff;
+    color: #343434;
 }
 
 
@@ -101,8 +115,103 @@ p.gallery_legend{
     border: 1px solid;
     min-height: 440px;
     margin: 10px;
+    border: 1px solid yellow;
 }
 
+/* style modal gallery photos */
+.modal_photos_gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #343434;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all .2s;
+}
+
+.btn_close_modal_photos{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+.btn_close_modal_photos:hover{
+    cursor: pointer;
+}
+/*
+.modal_photo_img{
+    z-index: 10;
+}
+*/
+.prev_gallery_modal, .next_gallery_modal{
+    background-color: #111;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1000;
+}
+.prev_gallery_modal{
+    left: 0;
+}
+.next_gallery_modal {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.open_modal_gallery{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* end style modal gallery photos */
+
+
+/* controllers mídia imóvel */
+.controllers_media_imovel{
+    flex-basis: 100%;
+    margin: 10px;
+    padding: 10px 0;
+}
+.btn_media_imagem, .btn_media_video, .btn_media_3d{
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+.btn_media_imagem:hover, .btn_media_video:hover, .btn_media_3d:hover{
+    cursor: pointer;
+}
+.btn_media_selected{
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+}
+/* end controllers mídia imóvel */
+
+
+/* style video imovel */
+.container_video_imovel{
+    display: flex;
+    align-items: center;
+}
 
 /* max screen width 768px */
 @media(max-width: 768px){
