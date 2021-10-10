@@ -147,10 +147,31 @@
                         </video>
                     </div>
 
-                    <div class="container_imovel_3d" style="display: none;">
-                        container imagem 3D
+
+                    <!-- ==================== panoramic image ======================== -->
+                    <link rel="stylesheet" href="css/pannellum.css">
+                    <script src="./js/pannellum.js"></script>
+                    <style>
+                        .pnlm-container{
+                            height: 100%;
+                        }
+                    </style>
+                    <div id="panorama" class="container_imovel_3d .view-3d" style="display: none;">
+                        
                     </div>
-                
+
+                    
+                    <script>
+                        pannellum.viewer('panorama', {
+                            "type": "equirectangular",
+                            "panorama": "./texturas/pan.jpg",
+                            "preview": "./texturas/pan.jpg"
+                        });
+                    </script>
+                    <!-- ======================== panoramic image ====================== -->
+
+
+
                 </div>
 
                 <div class="imovel_content_principal_info">
