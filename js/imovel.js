@@ -14,6 +14,7 @@ function passSlide(n){
 
     var slide_photo = document.getElementsByClassName("slide_gallery_photos");
     var slide_thumb = document.getElementsByClassName("gallery_demo_thumb");
+    
 
     if (n > slide_photo.length){
         slideGalleryIndex = 1;
@@ -25,11 +26,11 @@ function passSlide(n){
         slide_photo[i].style.display = "none";
         slide_thumb[i].style.opacity = 0.5
     }
+    
     slide_photo[slideGalleryIndex - 1].style.display = "block";
     slide_thumb[slideGalleryIndex - 1].style.opacity = 1;
 
 }
-
 
 /*
 //controlls modal
@@ -81,6 +82,21 @@ document.querySelector(".modal_full_screen").addEventListener("click", function(
 
     document.querySelector(".modal_full_screen").style.display = "none";
     document.querySelector(".btn_close_modal_photos").style.display = "unset";
+
+    var imgt = document.getElementsByClassName("img-t");
+    for(var i = 0; i < imgt.length; i++){
+        console.log(imgt[i].naturalHeight);
+        console.log(imgt[i].naturalWidth);
+        if(imgt[i].naturalHeight > imgt[i].naturalWidth){
+            console.log("foi");
+            imgt[i].style.height = "100%";
+            imgt[i].style.width = "auto";
+        }else{
+            imgt[i].style.width = "100%";
+            imgt[i].style.height = "auto";
+        }
+    }
+
 });
 
 
