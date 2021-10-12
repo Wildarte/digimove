@@ -35,20 +35,20 @@
                         <div class="gallery_photos_palco">
                             
                             <div class="slide_gallery_photos">
-                                <img id="imagem_gallery" class="img-t test" src="img/gallery/image-imovel-1.jpg" alt="imagem do imóvel">
+                                <img id="imagem_gallery" class="img-t" src="img/gallery/image-imovel-1.jpg" alt="imagem do imóvel">
                                 <p class="gallery_legend">
                                     Sala de estar
                                 </p>
                                 </script>
                             </div>
                             <div class="slide_gallery_photos">
-                                <img id="imagem_gallery" class="img-t" src="img/gallery/image-imovel-2.jpg" alt="imagem do imóvel">
+                                <img id="imagem_gallery" class="img-t" src="img/gallery/image-imovel-11.jpg" alt="imagem do imóvel">
                                 <p class="gallery_legend">
                                     Cozinha
                                 </p>
                             </div>
                             <div class="slide_gallery_photos">
-                                <img id="imagem_gallery" class="img-t" src="img/gallery/image-imovel-3.jpg" alt="imagem do imóvel">
+                                <img id="imagem_gallery" class="img-t" src="img/gallery/image-imovel-12.jpg" alt="imagem do imóvel">
                                 <p class="gallery_legend">
                                     Slide 3 jardim dos fundos
                                 </p>
@@ -121,8 +121,8 @@
                     </div>
 
                     <div class="container_video_imovel" style="display: none;">
-                        <video width="320" height="240" controls style="width: 100%; height: auto">
-                            <source src="./video/Water - 3967.mp4" type="video/mp4">
+                        <video width="320" height="240" controls>
+                            <source src="./video/vertical-video.mp4" type="video/mp4">
                         </video>
                     </div>
 

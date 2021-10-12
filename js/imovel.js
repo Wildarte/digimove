@@ -71,6 +71,23 @@ document.querySelector(".btn_close_modal_photos").addEventListener("click", func
 
     document.querySelector(".modal_full_screen").style.display = "block";
     document.querySelector(".btn_close_modal_photos").style.display = "none";
+
+    /*
+    var gphoto = document.getElementsByClassName("slide_gallery_photos");
+    var imgt = document.getElementsByClassName("img-t"); //pega as todas as imagens da galeria
+    for(var i = 0; i < imgt.length; i++){
+        console.log(imgt[i].naturalHeight);
+        console.log(imgt[i].naturalWidth);
+
+        gphoto[i].classList.remove("gallery-heightauto");
+        if(imgt[i].naturalHeight > imgt[i].naturalWidth){
+            console.log("foi");
+            imgt[i].classList.remove("img-height100-widthauto");
+        }else{
+            imgt[i].classList.remove("img-width100-heightauto");
+        }
+    }
+    */
 })
 
 document.querySelector(".modal_full_screen").addEventListener("click", function(){
@@ -83,22 +100,29 @@ document.querySelector(".modal_full_screen").addEventListener("click", function(
     document.querySelector(".modal_full_screen").style.display = "none";
     document.querySelector(".btn_close_modal_photos").style.display = "unset";
 
-    var imgt = document.getElementsByClassName("img-t");
-    for(var i = 0; i < imgt.length; i++){
-        console.log(imgt[i].naturalHeight);
-        console.log(imgt[i].naturalWidth);
-        if(imgt[i].naturalHeight > imgt[i].naturalWidth){
-            console.log("foi");
-            imgt[i].style.height = "100%";
-            imgt[i].style.width = "auto";
-        }else{
-            imgt[i].style.width = "100%";
-            imgt[i].style.height = "auto";
-        }
-    }
+    
+    
 
 });
 
+var gphoto = document.getElementsByClassName("slide_gallery_photos");
+var imgt = document.getElementsByClassName("img-t"); //pega as todas as imagens da galeria
+for(var i = 0; i < imgt.length; i++){
+    console.log(imgt[i].naturalHeight);
+    console.log(imgt[i].naturalWidth);
+
+    if(imgt[i].naturalHeight > imgt[i].naturalWidth){
+        console.log("largura da tela: "+ document.documentElement.clientWidth);
+        console.log("foi");
+        imgt[i].classList.add("img-height100-widthauto");
+    }else{
+        console.log("nao foi");
+        imgt[i].classList.add("img-width100-heightauto");
+        gphoto[i].classList.add("gallery-heightauto");
+
+    }
+
+}
 
 // buttons control media imovel
 
