@@ -5,7 +5,7 @@
             <div class="container section_footer_content">
                 <header class="header_footer">
                     <div class="logo_header_footer">
-                        <img src="img/logo - Digi Move.png" alt="">
+                        <img src="img/logo - Digi Move2.png" alt="">
                     </div>
                 </header>
 

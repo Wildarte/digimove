@@ -32,32 +32,7 @@ function passSlide(n){
 
 }
 
-/*
-//controlls modal
-var indexModalPhotos = 1;
-showPhotoModal(indexModalPhotos);
 
-function passPhotoModal(n){
-    console.log("click")
-    showPhotoModal(indexModalPhotos += n);
-}
-
-function showPhotoModal(n){
-    
-    var slideModalPhoto = document.getElementsByClassName("modal_photo_img");
-    if(n > slideModalPhoto.length){
-        indexModalPhotos = 1;
-    }
-    if(n < 1){
-        indexModalPhotos = slideModalPhoto.length;
-    }
-    for(var i = 0; i < slideModalPhoto.length; i++){
-        slideModalPhoto[i].style.display = "none";
-    }
-    slideModalPhoto[indexModalPhotos - 1].style.display = "block";
-
-}
-*/
 //button close modal gallery photos
 
 document.querySelector(".btn_close_modal_photos").addEventListener("click", function(){
@@ -100,23 +75,17 @@ document.querySelector(".modal_full_screen").addEventListener("click", function(
     document.querySelector(".modal_full_screen").style.display = "none";
     document.querySelector(".btn_close_modal_photos").style.display = "unset";
 
-    
-    
 
 });
 
 var gphoto = document.getElementsByClassName("slide_gallery_photos");
 var imgt = document.getElementsByClassName("img-t"); //pega as todas as imagens da galeria
 for(var i = 0; i < imgt.length; i++){
-    console.log(imgt[i].naturalHeight);
-    console.log(imgt[i].naturalWidth);
 
     if(imgt[i].naturalHeight > imgt[i].naturalWidth){
         console.log("largura da tela: "+ document.documentElement.clientWidth);
-        console.log("foi");
         imgt[i].classList.add("img-height100-widthauto");
     }else{
-        console.log("nao foi");
         imgt[i].classList.add("img-width100-heightauto");
         gphoto[i].classList.add("gallery-heightauto");
 

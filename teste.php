@@ -4,26 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ambiente de teste</title>
+    <style>
+        .rect{
+            width: 100%;
+            height: 556px;
+            border: 1px solid;
+        }
+    </style>
 </head>
 <body>
     
-    <a-scene>
-        <a-sky src="./pan.jpeg" rotation="0 -130 0"></a-sky>
-    </a-scene>
+    <h2>Bem-vindo ao ambiente de teste</h2>
 
+    <div class="rect">
+        
+    </div>
+    
     <script>
-        // Create the scene
-        var scene = document.createElement('a-scene');
 
-        // Create the sky
-        var sky = document.createElement('a-sky');
-        sky.src = './pan.jpeg';
-        sky.setAttribute('rotation', { x: 0, y: -130, y: 0 });
+        var rec = document.querySelector(".rect");
 
-        // Inject into page
-        scene.appendChild(sky);
-        document.body.appendChild(scene);
+        
+        rec.addEventListener("touchmove", function(){
+            var point_initial;
+            rec.addEventListener("touchstart", e =>{
+                point_initial = e.changedTouches[0].clientX;
+                
+                rec.addEventListener("touchend", e => {
+                    if(e.changedTouches[0].clientX > point_initial){
+                        console.log("é maior")
+                    }else{
+                        console.log("é menor")
+                    }
+                });
+            });
+            
+        })
+        
     </script>
 
 </body>

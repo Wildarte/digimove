@@ -18,23 +18,32 @@
 <body>
     
     <header class="header container-full">
-        <div class="container header_container">
-            <div class="header_logo">
-                <a href="http://192.168.99.173/temas/digimove/" class="header_logo_link">
-                    <img src="img/logo - Digi Move.png" alt="logo do site">
-                </a>
-            </div>
-            <div class="header_right">
-                <div class="header_social">
+        <div class="header_social">
+            <div class="container header_social_content">
+                <div class="header_social_contato">
+                    <a href="tel:999999999999"><i class="bi bi-telephone-outbound"></i> (99) 9 9999-9999</a>
+                    <a href="mailto:contato@meusite.com"><i class="bi bi-envelope"></i> contato@meusite.com</a>
+                </div>
+                <div class="header_social_redes">
                     <a href="#"><i class="bi bi-facebook"></i></a>
                     <a href="#"><i class="bi bi-instagram"></i></a>
                     <a href="#"><i class="bi bi-twitter"></i></a>
                     <a href="#"><i class="bi bi-linkedin"></i></a>
                 </div>
+                
+            </div>
+        </div>
+        <div class="container header_container">
+            <div class="header_logo">
+                <a href="http://192.168.99.173/temas/digimove/" class="header_logo_link">
+                    <img src="img/logo - Digi Move2.png" alt="logo do site">
+                </a>
+            </div>
+            <div class="header_right">
                 <nav class="nav_menu">
                     <header class="header_menu_mobile">
                         <div class="logo_menu_mobile">
-                            <img src="img/logo - Digi Move.png" alt="logo mobile do site">
+                            <img src="img/logo - Digi Move2.png" alt="logo mobile do site">
                         </div>
                         <div class="btn_close_menu">
                             <i class="bi bi-x-circle"></i>

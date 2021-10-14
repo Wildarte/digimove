@@ -63,7 +63,7 @@
 /* header */
 header.header{
     background-color: var(--main-bg-color);
-    min-height: 80px;
+    min-height: 60px;
     border-bottom: 1px solid #565656;
 }
 .header_container{
@@ -88,26 +88,51 @@ header.header{
 .header_right{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    align-content: center;
     max-width: calc(100% - 250px);
-    min-height: 80px;
+    min-height: 60px;
+}
+.header_social_contato{
+    display: flex;
+}
+.header_social_contato a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 0!important;
+    font-size: .8em!important;
+}
+.header_social_contato a i{
+    margin-right: 5px!important;
 }
 .header_social{
+    background-color: #343434;
+    width: 100%;
+    min-height: 20px;
+}
+.header_social_content{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_social_redes{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-}
-.header_social::after{
-    content: "";
-    display: block;
-    width: 80%;
-    border-bottom: 1px solid #fff;
 }
 .header_social a{
     margin-left: 20px;
+    color: #fff;
+    padding: 4px;
+    font-size: .7em;
+
+}
+.header_social a i{
+    margin: auto;
+}
+.header_social a:hover{
     color: #fff;
 }
 
@@ -115,7 +140,7 @@ header.header{
 .header_right .nav_menu{
     display: flex;
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 .header_right .nav_menu ul{
     flex-basis: 100%;
@@ -607,10 +632,11 @@ a.card_saiba_mais_link{
     flex-wrap: wrap;
     margin: 10px;
     background-color: rgba(0,0,0,0.5);
-    transition: .2s;
+    transition: .24s;
 }
 .card_servicos:hover{
     box-shadow: 2px 2px 10px 2px rgba(100,100,100,0.9);
+    transform: scale(1.025, 1.025);
 }
 .card_servicos_header{
     flex-basis: 100%;
