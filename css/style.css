@@ -1027,6 +1027,57 @@ footer p a{
 }
 /* section footer */
 
+
+/* style chat */
+
+.btn_chat{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+}
+.btn_chat .btn_icon{
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    width: 64px;
+    height: 64px;
+    box-shadow: 0px 0px 10px 0px #232323;
+    background-color: #077DBA;
+    transition: .23s;
+}
+.btn_chat .btn_icon:hover{
+    cursor: pointer;
+}
+.btn_chat .btn_icon i{
+    font-size: 2em;
+    color: #fff;
+}
+.btn_chat .btn_icon i::before{
+    font-weight: bold!important;
+}
+.badge_chat{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: red;
+}
+.notification_chat{
+    position: absolute;
+    bottom: 30%;
+    right: 110%;
+    padding: 8px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px #343434;
+}
+.notification_chat p{
+    color: #343434;
+    white-space: nowrap;
+}
+
 /* max screen width 1024px */
 @media(max-width: 1024px){
     .div_form form{

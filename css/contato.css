@@ -67,14 +67,18 @@
 }
 
 /* max screen width 768px */
-.card_page_contato{
-    flex-basis: 50%;
+@media(max-width: 768px){
+    .card_page_contato{
+        flex-basis: 50%;
+    }
 }
 /* end max screen width 768px */
 
 
 /* max screen width 420px */
-.card_page_contato{
-    flex-basis: 100%;
+@media(max-width: 420px){
+    .card_page_contato{
+        flex-basis: 100%;
+    }
 }
 /* end max screen width 420px */

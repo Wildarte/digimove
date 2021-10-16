@@ -62,7 +62,7 @@
 
 /* sidebar */
 .sidebar_service{
-    flex-basis: calc(30% - 20px);
+    flex-basis: calc(30% - 40px);
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -149,4 +149,30 @@
     content: "\2022";
     margin: 0 10px 0 0;
 }
+.sidebar_service_search{
+    flex-basis: 100%;
+}
 /* end style single page service */
+
+
+/* max width screen width 768px */
+@media(max-width: 768px){
+    .section_single_servico, .sidebar_service{
+        flex-basis: calc(100% - 20px);
+    }
+    .imagem_single_service{
+        height: 260px;
+    }
+}
+
+
+
+/* max width screen width 420px */
+@media(max-width: 420px){
+    .section_servico_body h2{
+        font-size: 1.5em;
+    }
+    .imagem_single_service{
+        height: 180px;
+    }
+}

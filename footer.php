@@ -80,6 +80,22 @@
             todos os direitos reservados - <?= date("Y") ?> | Construído com &#10084; por <a href="#">digisolucao.com</a>
         </p>
     </footer>
+
+    <div class="window_chat">
+
+    </div>
+    <div class="btn_chat" id="btn_chat">
+        <span class="badge_chat" style="display: none;">
+            
+        </span>
+        <button class="btn_icon">
+            <i class="bi bi-chat"></i>
+        </button>
+        <span class="notification_chat" style="display: none;">
+            <p>Olá, como posso ajudar?</p>
+        </span>
+    </div>
+
     <script src="js/main.js"></script>
     <script src="js/sliderCard.js"></script>
     <script src="js/slideLancamento.js"></script>
