@@ -1070,12 +1070,143 @@ footer p a{
     bottom: 30%;
     right: 110%;
     padding: 8px;
+    border-radius: 4px;
     background-color: #fff;
     box-shadow: 2px 2px 4px #343434;
+    transition: .23s;
 }
 .notification_chat p{
     color: #343434;
     white-space: nowrap;
+}
+.close_msg_chat{
+    position: absolute;
+    top: -20px;
+    right: -8px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px #000;
+    display: flex;
+    text-align: center;
+}
+.close_msg_chat i{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close_msg_chat:hover{
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+}
+/* janela de chat */
+.view_window_chat{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    width: 320px;
+    height: 400px;
+    overflow: hidden;
+}
+.view_window_chat_content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.window_chat{
+    background-color: rgba(256,256,256,0.8);
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    top: 410px;
+    width: 300px;
+    height: 380px;
+    border-radius: 32px 32px 0 32px;
+    border: 4px solid #077DBA;
+    box-shadow: 2px 2px 4px;
+    overflow: hidden;
+    transition: .15s;
+}
+.window_chat header{
+    background-color: #077DBA;
+    color: #fff;
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+.window_chat header .window_chat_logo{
+    flex-basis: 25%;
+}
+.window_chat header .window_chat_logo img{
+    width: 100%;
+    border-radius: 50%;
+    padding: 5px 0 0 5px;
+}
+.window_chat header .window_chat_dados{
+    flex-basis: 50%;
+    padding-left: 8px;
+}
+.window_chat header .window_chat_dados p{
+    margin: 5px 0;
+}
+.window_chat .window_chat_close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff
+}
+.window_chat .window_chat_close:hover{
+    cursor: pointer;
+}
+.window_chat_height{
+    top: 10px;
+}
+
+.window_chat_body{
+    height: 60%;
+}
+.window_chat_footer{
+    height: 25%;
+    padding: 5px;
+    border-top: 1px solid #999;
+    background-color: #fff;
+    display: flex;
+}
+.window_chat_footer textarea{
+    height: 100%;
+    width: 75%;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 0 0 0 32px;
+}
+.window_chat_footer textarea:focus{
+    outline: none;
+}
+.window_chat_footer .btn_send_chat{
+    flex-basis: 30%;
+    display: flex;
+}
+.btn_send_chat button{
+    margin: auto;
+    display: flex;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: green;
+    border: none;
+}
+.btn_send_chat button:hover{
+    cursor: pointer;
+}
+.btn_send_chat button i{
+    margin: auto;
+    font-size: 1.8em;
+    color: #fff;
 }
 
 /* max screen width 1024px */

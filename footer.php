@@ -81,9 +81,38 @@
         </p>
     </footer>
 
-    <div class="window_chat">
+    <div class="view_window_chat">
+        <div class="view_window_chat_content">
+            <div class="window_chat">
+                <header>
+                    <div class="window_chat_logo">
+                        <img src="img/img-corretor.jpg" alt="">
+                    </div>
+                    <div class="window_chat_dados">
+                        <p>Andréia Correa</p>
+                        <p>Corretora</p>
+                    </div>
+                    
+                </header>
+                <div class="window_chat_body">
 
+                </div>
+                <div class="window_chat_footer">
+                    <textarea name="" id="" placeholder="..."></textarea>
+                    <div class="btn_send_chat">
+                        <button>
+                            <i class="bi bi-whatsapp"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="window_chat_close">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+            </div>
+        </div>
     </div>
+    
     <div class="btn_chat" id="btn_chat">
         <span class="badge_chat" style="display: none;">
             
@@ -93,6 +122,9 @@
         </button>
         <span class="notification_chat" style="display: none;">
             <p>Olá, como posso ajudar?</p>
+            <span class="close_msg_chat">
+                <i class="bi bi-x"></i>
+            </span>
         </span>
     </div>
 
