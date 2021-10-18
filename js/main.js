@@ -14,17 +14,33 @@ document.addEventListener("DOMContentLoaded", function(){
     if(checkNotification()){
         notifica();
     }else{
-        document.querySelector(".badge_chat").style.display = "block";
-        document.querySelector(".notification_chat").style.display = "block";
+        var nt = getCookie('cBadgeNotifica');
+        var nb = getCookie('cMsgNotifica');
+        if(nt == ""){
+            document.querySelector(".badge_chat").style.display = "block";
+        }
+        if(nb == ""){
+            document.querySelector(".notification_chat").style.display = "block";
+        }
     }
 });
+//function notifica title
+function addNotTitle(){
+    var title_old = document.title;
+    if(title_old.includes("(1)")){
+        document.title = title_old.slice(3);
+    }else{
+        var new_title = "(1)"+title_old;
+        document.title = new_title;
+    }
+    
+}
 
 //function check existis cookie cnChat
 function checkNotification(){
     var n = getCookie("cnChat");
     console.log(n);
     if(n == ""){
-        console.log(n);
         document.cookie = "cnChat=1";
         return true;
     }else{
@@ -34,10 +50,17 @@ function checkNotification(){
 //function show notification
 function notifica(){
     setTimeout(function(){
-        document.querySelector(".badge_chat").style.display = "block";
+        var nt = getCookie('cBadgeNotifica');
+        if(nt == ""){
+            document.querySelector(".badge_chat").style.display = "block";
+            addNotTitle();
+        }
     }, 5000);
     setTimeout(function(){
-        document.querySelector(".notification_chat").style.display = "block";
+        var nb = getCookie('cMsgNotifica');
+        if(nb == ""){
+            document.querySelector(".notification_chat").style.display = "block";
+        }
     }, 5500);
 }
 //function get cookie by name cookie
@@ -57,11 +80,12 @@ function getCookie(cname) {
     return "";
 }
 
-
+//button close msg notification
 var close_msg_notification = document.querySelector(".close_msg_chat");
 close_msg_notification.addEventListener("click", function(){
     document.querySelector(".notification_chat").style.opacity = "0";
     document.querySelector(".notification_chat").style.display = "none";
+    document.cookie = "cMsgNotifica=1";
 });
 
 
@@ -71,6 +95,12 @@ btn_open_chat.addEventListener("click", function(){
     document.querySelector(".notification_chat").style.display = "none";
     document.querySelector(".badge_chat").style.display = "none";
     document.querySelector(".window_chat").classList.add("window_chat_height");
+    document.cookie = "cMsgNotifica=1";
+    document.cookie = "cBadgeNotifica=1";
+    var title_old = document.title;
+    if(title_old.includes("(1)")){
+        document.title = title_old.slice(3);
+    }
 });
 
 var btn_close_chat = document.querySelector(".window_chat_close");
@@ -78,3 +108,8 @@ btn_close_chat.addEventListener("click", function(){
     document.querySelector(".window_chat").classList.remove("window_chat_height");
 });
 // end all code for chat and notification
+
+//funcao que envia msg e direciona para whatsapp
+function sendMsgWa(tel, msg){
+    window.open('https://api.whatsapp.com/send?phone='+tel+'&text='+msg , '_blank');
+}

@@ -97,7 +97,7 @@
                         <div class="logo_card_imovel">
                             <img src="img/logo - Digi Move.png" alt="">
                         </div>
-                        <a class="link_to_imovel" href="#"></a>
+                        <a class="link_to_imovel" href="http://192.168.99.173/temas/digimove/imovel.php"></a>
                         <div class="header_card_tag">
                             <span>Venda/aluga</span>
                         </div>
@@ -117,7 +117,7 @@
                         <p class="desc_card_imovel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex harum dolorem corrupti odit cum quia reprehenderit! Atque magnam, adipisci</p>
                     </div>
                     <div class="card_imovel_footer">
-                        <a href="#">Saiba Mais</a>
+                        <a href="http://192.168.99.173/temas/digimove/imovel.php">Saiba Mais</a>
                     </div>
                 </article>
                 <!-- ============================ end card imovel 1 ============================ -->
@@ -161,7 +161,7 @@
                         <div class="logo_card_imovel">
                             <img src="img/logo - Digi Move.png" alt="">
                         </div>
-                        <a class="link_to_imovel" href="#"></a>
+                        <a class="link_to_imovel" href="http://192.168.99.173/temas/digimove/imovel.php"></a>
                         <div class="header_card_tag">
                             <span>Venda/aluga</span>
                         </div>
@@ -181,7 +181,7 @@
                         <p class="desc_card_imovel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex harum dolorem corrupti odit cum quia reprehenderit! Atque magnam, adipisci</p>
                     </div>
                     <div class="card_imovel_footer">
-                        <a href="#">Saiba Mais</a>
+                        <a href="http://192.168.99.173/temas/digimove/imovel.php">Saiba Mais</a>
                     </div>
                 </article>
                 <!-- ============================ end card imovel 2 ============================ -->

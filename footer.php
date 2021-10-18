@@ -81,37 +81,36 @@
         </p>
     </footer>
 
-    <div class="view_window_chat">
-        <div class="view_window_chat_content">
-            <div class="window_chat">
-                <header>
-                    <div class="window_chat_logo">
-                        <img src="img/img-corretor.jpg" alt="">
-                    </div>
-                    <div class="window_chat_dados">
-                        <p>Andréia Correa</p>
-                        <p>Corretora</p>
-                    </div>
-                    
-                </header>
-                <div class="window_chat_body">
-
-                </div>
-                <div class="window_chat_footer">
-                    <textarea name="" id="" placeholder="..."></textarea>
-                    <div class="btn_send_chat">
-                        <button>
-                            <i class="bi bi-whatsapp"></i>
-                        </button>
-                    </div>
-                    
-                </div>
-                <div class="window_chat_close">
-                    <i class="bi bi-x-circle"></i>
-                </div>
+    <div class="window_chat">
+        <header>
+            <div class="window_chat_logo">
+                <img src="img/img-corretor.jpg" alt="">
             </div>
+            <div class="window_chat_dados">
+                <p>Andréia Correa</p>
+                <p>Corretora</p>
+            </div>
+            
+        </header>
+        <div class="window_chat_body">
+            <span class="chat_msg">
+                <p>Olá, qualquer dúvida me mande uma mensagem</p>
+            </span>
+        </div>
+        <div class="window_chat_footer">
+            <textarea name="" id="text_msg_wpp" placeholder="..."></textarea>
+            <div class="btn_send_chat">
+                <button id="btn_msg_wpp">
+                    <i class="bi bi-whatsapp"></i>
+                </button>
+            </div>
+            
+        </div>
+        <div class="window_chat_close">
+            <i class="bi bi-x-circle"></i>
         </div>
     </div>
+       
     
     <div class="btn_chat" id="btn_chat">
         <span class="badge_chat" style="display: none;">
@@ -127,12 +126,37 @@
             </span>
         </span>
     </div>
-
+    <div id="back-to-top" style="display: none;">
+        <i class="bi bi-arrow-up-circle"></i>
+    </div>
     <script src="js/main.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/sliderCard.js"></script>
     <script src="js/slideLancamento.js"></script>
     <script src="js/review.js"></script>
     <script src="js/imovel.js"></script>
+
+    <script>
+        document.getElementById("btn_msg_wpp").addEventListener("click", function(){
+            let txt = document.getElementById("text_msg_wpp").value
+            sendMsgWa('5511979516720', txt);
+        });
+        var btn = $("#back-to-top");
+        btn.click(function() {
+        $('html, body').animate({scrollTop:0}, 'slow');
+        });
+
+        document.addEventListener('scroll', function(){
+            var tela = window.scrollY;
+
+            if(tela > 100){
+                document.getElementById("back-to-top").style.display = "flex";
+            }else{
+                document.getElementById("back-to-top").style.display = "none";
+            }
+
+        });
+    </script>
 
 </body>
 </html>
