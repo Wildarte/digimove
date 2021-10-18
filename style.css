@@ -1,3 +1,20 @@
+/*
+Theme Name: digimove
+Theme URI: https://digisolucao.com
+Author: Digi Solução
+Author URI: https://digisolucao.com
+Description: Tema criado para imobiliarias e corretores
+Version: 1.0
+*/
+
+@import 'css/contato.css';
+@import 'css/imoveis.css';
+@import 'css/imovel.css';
+@import 'css/pannellum.css';
+@import 'css/servicos.css';
+@import 'css/sobre.css';
+
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -181,7 +198,6 @@ header.header{
 /* section intro home */
 .section_intro_home{
     height: 400px;
-    background-image: url('../img/sao-paulo-ge7888bbe8_1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

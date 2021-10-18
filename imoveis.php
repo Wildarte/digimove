@@ -1,4 +1,7 @@
-<?php include('./header.php'); ?>
+<?php
+// Template Name: imoveis
+get_header();
+?>
 
 <main>
     <section class="container-full section_intro_imoveis">
@@ -454,4 +457,4 @@
 
 </main>
 <?php include('./inc/maps.php'); ?>
-<?php include('./footer.php'); ?>
+<?php get_footer(); ?>

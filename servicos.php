@@ -1,4 +1,7 @@
-<?php include('./header.php'); ?>
+<?php
+// Template Name: servicos
+get_header();
+?>
 
 <main>
     <section class=" container-full section_intro_pages" style="background-image: url('./img/intro-servicos.jpg')">
@@ -52,4 +55,4 @@
     </section>
 </main>
 <?php include('./inc/maps.php'); ?>
-<?php include('./footer.php'); ?>
+<?php get_footer(); ?>

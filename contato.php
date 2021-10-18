@@ -1,4 +1,7 @@
-<?php include('./header.php'); ?>
+<?php
+// Template Name: contato
+get_header();
+?>
 
 <main>
     <section class=" container-full section_intro_pages" style="background-image: url('./img/intro-contato-page.jpg')">
@@ -49,4 +52,4 @@
 
     <?php include('./inc/formContact.php'); ?>
 </main>
-<?php include('./footer.php'); ?>
+<?php get_footer(); ?>

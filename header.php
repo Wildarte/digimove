@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/imoveis.css">
-    <link rel="stylesheet" href="css/servicos.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/imovel.css">
-    <link rel="stylesheet" href="./css/font/bootstrap-icons.css">
+    <title><?php bloginfo('name'); ?></title>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/font/bootstrap-icons.css">
     <style>i{font-size: 1.5em;}</style>
+    <!-- header wordpress -->
+    <?php wp_head(); ?>
+    <!-- header wordpress -->
 </head>
 <body>
 
@@ -35,26 +33,26 @@
         </div>
         <div class="container header_container">
             <div class="header_logo">
-                <a href="http://192.168.99.173/temas/digimove/" class="header_logo_link">
-                    <img src="img/logo - Digi Move2.png" alt="logo do site">
+                <a href="<?= home_url(); ?>/" class="header_logo_link">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo - Digi Move2.png" alt="logo do site">
                 </a>
             </div>
             <div class="header_right">
                 <nav class="nav_menu">
                     <header class="header_menu_mobile">
                         <div class="logo_menu_mobile">
-                            <img src="img/logo - Digi Move2.png" alt="logo mobile do site">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo - Digi Move2.png" alt="logo mobile do site">
                         </div>
                         <div class="btn_close_menu">
                             <i class="bi bi-x-circle"></i>
                         </div>
                     </header>
                     <ul>
-                        <li><a href="http://192.168.99.173/temas/digimove/">Home</a></li>
-                        <li><a href="http://192.168.99.173/temas/digimove/imoveis.php">Imóveis</a></li>
-                        <li><a href="http://192.168.99.173/temas/digimove/servicos.php">Serviços</a></li>
-                        <li><a href="http://192.168.99.173/temas/digimove/sobre.php">Sobre</a></li>
-                        <li><a href="http://192.168.99.173/temas/digimove/contato.php">Contato</a></li>
+                        <li><a href="<?= home_url(); ?>/">Home</a></li>
+                        <li><a href="<?= home_url(); ?>/imoveis.php">Imóveis</a></li>
+                        <li><a href="<?= home_url(); ?>/servicos.php">Serviços</a></li>
+                        <li><a href="<?= home_url(); ?>/sobre.php">Sobre</a></li>
+                        <li><a href="<?= home_url(); ?>/contato.php">Contato</a></li>
                     </ul>
                     <div class="rec_menu"></div>
                     <div class="header_social_mobile">

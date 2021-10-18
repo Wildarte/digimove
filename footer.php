@@ -44,7 +44,7 @@
                         </header>
                         <section class="body_news_footer">
                             <article class="card_footer">
-                                <a href="#" class="card_thumb" style="background-image: url('img/lancamento1.jpg');"></a>
+                                <a href="#" class="card_thumb" style="background-image: url('<?= get_template_directory_uri(); ?>/img/lancamento1.jpg');"></a>
                                 <div class="body_card_footer">
                                     <h4>Alameda das flores</h4>
                                     <p>Venda: R$ 290.000  |  Aluga: R$ 1.200/mês</p>
@@ -52,7 +52,7 @@
                             </article>
 
                             <article class="card_footer">
-                                <a href="#" class="card_thumb" style="background-image: url('img/lancamento2.jpg');">
+                                <a href="#" class="card_thumb" style="background-image: url('<?= get_template_directory_uri(); ?>/img/lancamento2.jpg');">
                                 </a>
                                 <div class="body_card_footer">
                                     <h4>Alameda das flores</h4>
@@ -84,7 +84,7 @@
     <div class="window_chat">
         <header>
             <div class="window_chat_logo">
-                <img src="img/img-corretor.jpg" alt="">
+                <img src="<?= get_template_directory_uri(); ?>/img/img-corretor.jpg" alt="">
             </div>
             <div class="window_chat_dados">
                 <p>Andréia Correa</p>
@@ -129,12 +129,12 @@
     <div id="back-to-top" style="display: none;">
         <i class="bi bi-arrow-up-circle"></i>
     </div>
-    <script src="js/main.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/sliderCard.js"></script>
-    <script src="js/slideLancamento.js"></script>
-    <script src="js/review.js"></script>
-    <script src="js/imovel.js"></script>
+    <script src="<?= get_template_directory_uri(); ?>/js/main.js"></script>
+    <script src="<?= get_template_directory_uri(); ?>/js/jquery-3.6.0.min.js"></script>
+    <script src="<?= get_template_directory_uri(); ?>/js/sliderCard.js"></script>
+    <script src="<?= get_template_directory_uri(); ?>/js/slideLancamento.js"></script>
+    <script src="<?= get_template_directory_uri(); ?>/js/review.js"></script>
+    <script src="<?= get_template_directory_uri(); ?>/js/imovel.js"></script>
 
     <script>
         document.getElementById("btn_msg_wpp").addEventListener("click", function(){
@@ -157,6 +157,8 @@
 
         });
     </script>
-
+    <!-- footer wordpress -->
+    <?php wp_footer(); ?>
+    <!-- footer wordpress -->
 </body>
 </html>

@@ -1,4 +1,7 @@
-<?php include('./header.php'); ?>
+<?php
+// Template Name: sobre
+get_header();
+?>
 
 <main>
     <section class=" container-full section_intro_pages" style="background-image: url('./img/intro-sobre-page.jpg')">
@@ -25,4 +28,4 @@
     </section>
 </main>
 
-<?php include('./footer.php'); ?>
+<?php get_footer(); ?>
